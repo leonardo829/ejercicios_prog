@@ -5,7 +5,7 @@ namespace e_73
 {
     public class Cola
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Queue<string> colaDeCadenas = new Queue<string>();
 

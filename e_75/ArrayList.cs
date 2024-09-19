@@ -10,7 +10,7 @@ namespace e_75
     class arrayList
     {
 
-            static void Main(string[] args)
+            static void Main()
             {
                 ArrayList listaDeCadenas = new ArrayList();
 
@@ -28,12 +28,12 @@ namespace e_75
                     listaDeCadenas.Add(entrada);
                 }
 
-                Console.WriteLine("\nModo consulta activado. Introduce un número para ver la cadena en esa posición.");
+                Console.WriteLine("\nModo consulta activado. Introduce un numero para ver la cadena en esa posicion.");
                 Console.WriteLine("Presiona 0 para salir.");
 
                 while (true)
                 {
-                    Console.Write("Número (0 para salir): ");
+                    Console.Write("Numero (0 para salir): ");
                     string numeroStr = Console.ReadLine();
 
                     if (int.TryParse(numeroStr, out int numero))
@@ -43,16 +43,16 @@ namespace e_75
                         else if (numero >= 1 && numero <= listaDeCadenas.Count)
                         {
                             string cadena = (string)listaDeCadenas[numero - 1];
-                            Console.WriteLine($"Cadena en la posición {numero}: {cadena}");
+                            Console.WriteLine($"Cadena en la posicion {numero}: {cadena}");
                         }
                         else
                         {
-                            Console.WriteLine("Número fuera de rango. Introduce un valor válido.");
+                            Console.WriteLine("Numero fuera de rango. Introduce un valor valido.");
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Entrada no válida. Introduce un número entero.");
+                        Console.WriteLine("Entrada no valida. Introduce un numero entero.");
                     }
                 }
 

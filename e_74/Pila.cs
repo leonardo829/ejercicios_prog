@@ -8,7 +8,7 @@ namespace e_74
 {
     public class Pila
     {
-            static void Main(string[] args)
+            static void Main()
             {
                 Stack<string> pilaDeCadenas = new Stack<string>();
 
